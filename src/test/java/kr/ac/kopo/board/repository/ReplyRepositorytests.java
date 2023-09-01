@@ -19,7 +19,7 @@ public class ReplyRepositorytests {
     public void insertReply(){
         IntStream.rangeClosed(1, 300).forEach(i ->{
             // 1~100 사이의 임의의 값을 사용하자(BoardRepositoryTests에서 생성한 bno들)
-            long bno = new Random().nextInt(100) + 1;
+            long bno = new Random().nextInt(200) + 101;
 
             Board board = Board.builder()
                     .bno(bno)
